@@ -1,0 +1,17 @@
+TestNG -  Testing new generation frame work, unit test framework.
+TDD framework ==  test driven development
+
+Purpose--  design test cases in a systematic way
+-- generate html report
+--different annotation
+--priorties/ sequence of execation of test casses
+--dependencies
+--grouping
+--data provider 
+
+testNG ==  open source, free and available in form of jar file
+
+also called -- java unit testing framework
+JE unit and testNG both are used only used in java , these both are java frame work
+
+install testNG in Eclipse -- https://testng.org/testng-eclipse-update-site

@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Yahoo App Test">
+
+     <test name="Yahoo Test">
+
+          <parameter name ="url" value="https://ui.cogmento.com/" />
+          <parameter name ="emailId" value="hemant.hs828@gmail.com" />
+          <parameter name ="css" value =".ui.fluid.large.blue.submit.button" />
+            
+     
+        <classes>
+           <class name = "com.parameterTest.ParameterTest" />
+        </classes>   
+     
+    </test>
+     
+</suite>
