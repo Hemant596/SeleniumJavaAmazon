@@ -5,6 +5,7 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
 
 public class AmazonOrder {
 	
@@ -18,7 +19,9 @@ public class AmazonOrder {
 			driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
 			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 			driver.get("https://www.amazon.com/");
-			driver.findElement(By.cssSelector("#twotabsearchtextbox")).sendKeys("shoes");
+			Select sr = new Select(driver.findElement(By.cssSelector("#searchDropdownBox")));
+			sr.selectByVisibleText("Books");
+			driver.findElement(By.cssSelector("#twotabsearchtextbox")).sendKeys("Books");
 			driver.findElement(By.cssSelector("#nav-search-submit-button")).click();
 			driver.findElement(By.linkText("adidas Men's Low-Top Gymnastics Shoes")).click();
 			driver.findElement(By.cssSelector("#add-to-cart-button")).click();

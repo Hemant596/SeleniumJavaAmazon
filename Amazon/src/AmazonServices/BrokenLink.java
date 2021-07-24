@@ -32,7 +32,7 @@ public class BrokenLink {
 //		driver.findElement(By.cssSelector(".ui.fluid.large.blue.submit.button")).click();
         List<WebElement> linklist = driver.findElements(By.tagName("a"));
         linklist.addAll(driver.findElements(By.tagName("img")));
-        
+       driver.findElement(By.cssSelector("._1_3w1N")).click();
         System.out.println("Total :"+linklist.size());
         
         List<WebElement> links = new ArrayList<WebElement>();
